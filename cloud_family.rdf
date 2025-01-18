@@ -1,0 +1,596 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6/"
+     xml:base="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-6="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/tamer/ontologies/2024/10/cloudenvironment"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#accessTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#accessTo">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#User"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#Service"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#belongsTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#belongsTo">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#VirtualMachine"/>
+        <rdfs:range rdf:resource="http://www.co-ode.org/ontologies/ont.owl#User"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#hosts -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#hosts">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#Server"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#VirtualMachine"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#isManagedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#isManagedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#Server"/>
+        <rdfs:range rdf:resource="http://www.co-ode.org/ontologies/ont.owl#User"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#providesService -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#providesService">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#Server"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#Service"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#usesResource -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#usesResource">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#VirtualMachine"/>
+        <rdfs:range rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Resource"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/cloud#CloudEnvironment -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/cloud#CloudEnvironment"/>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Resource -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Resource">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/cloud#CloudEnvironment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#User -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#User">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/cloud#CloudEnvironment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#Administrator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#Administrator">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#User"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#ComputeResource -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#ComputeResource">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Resource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#DatabaseServer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#DatabaseServer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#Server"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#Developer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#Developer">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#User"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#EndUser -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#EndUser">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#User"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#FileServer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#FileServer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#Server"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#GuestUser -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#GuestUser">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#User"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#IaaS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#IaaS">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#Service"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#LinuxVM -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#LinuxVM">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#VirtualMachine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#MacVM -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#MacVM">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#VirtualMachine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#MailServer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#MailServer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#Server"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#MemoryResource -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#MemoryResource">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Resource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#NetworkResource -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#NetworkResource">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Resource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#PaaS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#PaaS">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#Service"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#SaaS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#SaaS">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#Service"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#Server -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#Server">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/cloud#CloudEnvironment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#Service -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#Service">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/cloud#CloudEnvironment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#StorageResource -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#StorageResource">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Resource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#TestVM -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#TestVM">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#VirtualMachine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#VirtualMachine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#VirtualMachine">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/cloud#CloudEnvironment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#WebServer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#WebServer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#Server"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#WindowsVM -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#WindowsVM">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#VirtualMachine"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/cloud#AWS_EC2_Instance1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/cloud#AWS_EC2_Instance1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#LinuxVM"/>
+        <untitled-ontology-6:belongsTo rdf:resource="http://www.co-ode.org/ontologies/cloud#DevDefne"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/cloud#AWS_Lambda -->
+
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/cloud#AWS_Lambda">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#SaaS"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/cloud#AWS_RDS -->
+
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/cloud#AWS_RDS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#DatabaseServer"/>
+        <untitled-ontology-6:hosts rdf:resource="http://www.co-ode.org/ontologies/cloud#AWS_EC2_Instance1"/>
+        <untitled-ontology-6:isManagedBy rdf:resource="http://www.co-ode.org/ontologies/cloud#AdminMel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/cloud#AdminMel -->
+
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/cloud#AdminMel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#Administrator"/>
+        <untitled-ontology-6:accessTo rdf:resource="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#AWS_EC2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/cloud#Azure_SQL_Database -->
+
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/cloud#Azure_SQL_Database">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#DatabaseServer"/>
+        <untitled-ontology-6:hosts rdf:resource="http://www.co-ode.org/ontologies/cloud#Azure_VirtualMachine"/>
+        <untitled-ontology-6:isManagedBy rdf:resource="http://www.co-ode.org/ontologies/cloud#AdminMel"/>
+        <untitled-ontology-6:providesService rdf:resource="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#Office365"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/cloud#Azure_VirtualMachine -->
+
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/cloud#Azure_VirtualMachine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#MacVM"/>
+        <untitled-ontology-6:belongsTo rdf:resource="http://www.co-ode.org/ontologies/cloud#AdminMel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/cloud#DevDefne -->
+
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/cloud#DevDefne">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#Developer"/>
+        <untitled-ontology-6:accessTo rdf:resource="http://www.co-ode.org/ontologies/cloud#AWS_Lambda"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/cloud#EndMete -->
+
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/cloud#EndMete">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#EndUser"/>
+        <untitled-ontology-6:accessTo rdf:resource="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#Office365"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/cloud#Google_BigQuery -->
+
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/cloud#Google_BigQuery">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#DatabaseServer"/>
+        <untitled-ontology-6:hosts rdf:resource="http://www.co-ode.org/ontologies/cloud#Google_Cloud_VM"/>
+        <untitled-ontology-6:isManagedBy rdf:resource="http://www.co-ode.org/ontologies/cloud#AdminMel"/>
+        <untitled-ontology-6:providesService rdf:resource="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#GoogleAppEngine"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/cloud#Google_Cloud_Storage -->
+
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/cloud#Google_Cloud_Storage">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#SaaS"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/cloud#Google_Cloud_VM -->
+
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/cloud#Google_Cloud_VM">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#WindowsVM"/>
+        <untitled-ontology-6:belongsTo rdf:resource="http://www.co-ode.org/ontologies/cloud#EndMete"/>
+        <untitled-ontology-6:usesResource rdf:resource="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#1024GB_Storage"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/cloud#Google_Kubernetes_Engine -->
+
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/cloud#Google_Kubernetes_Engine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#SaaS"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/cloud#GuestTamer -->
+
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/ontologies/cloud#GuestTamer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#GuestUser"/>
+        <untitled-ontology-6:accessTo rdf:resource="http://www.co-ode.org/ontologies/cloud#Google_Cloud_Storage"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#AWS_EC2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#AWS_EC2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#IaaS"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#ApacheWebServer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#ApacheWebServer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#WebServer"/>
+        <untitled-ontology-6:hosts rdf:resource="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#WinServer2022"/>
+        <untitled-ontology-6:isManagedBy rdf:resource="http://www.co-ode.org/ontologies/cloud#AdminMel"/>
+        <untitled-ontology-6:providesService rdf:resource="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#AWS_EC2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#GoogleAppEngine -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#GoogleAppEngine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#PaaS"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#Office365 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#Office365">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#SaaS"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#WinServer2022 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#WinServer2022">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#WindowsVM"/>
+        <untitled-ontology-6:usesResource rdf:resource="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#16GB_Ram"/>
+        <untitled-ontology-6:usesResource rdf:resource="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#4Ghz"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#1024GB_Storage -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#1024GB_Storage">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#StorageResource"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#16GB_Ram -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#16GB_Ram">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#MemoryResource"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#3.0Mbps -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#3.0Mbps">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#NetworkResource"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#4Ghz -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#4Ghz">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#ComputeResource"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.co-ode.org/ontologies/cloud#CloudEnvironment"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/ontologies/ont.owl#Resource"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/ontologies/ont.owl#User"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#Server"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#Service"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#VirtualMachine"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.co-ode.org/ontologies/ont.owl#Resource"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/ontologies/ont.owl#User"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#Server"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#Service"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#VirtualMachine"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#Administrator"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#Developer"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#EndUser"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#GuestUser"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#ComputeResource"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#MemoryResource"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#NetworkResource"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#StorageResource"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#DatabaseServer"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#FileServer"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#MailServer"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#WebServer"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#IaaS"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#PaaS"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#SaaS"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#LinuxVM"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#MacVM"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#TestVM"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tamer/ontologies/2024/10/untitled-ontology-6#WindowsVM"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
